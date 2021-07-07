@@ -6,7 +6,7 @@ This spec file will build an RPM for OpenResty. I've only tried it on CentOS 6/7
 To build the RPM, you'll first need to set up your build environment. Typically, this means creating some directories and installing some packages:
 
 	mkdir ~/rpmbuild/{SOURCES,SPECS}
-	yum install -y   zlib-devel lua lua-devel lua-json lua-filesystem rpm-build make openssl-devel pcre-devel GeoIP-devel readline-devel gcc-c++ wget perl-Digest-SHA perl-Digest-MD5 perl-Data-Dumper perl-Time-HiRes
+	yum install -y  git zlib-devel lua lua-devel lua-json lua-filesystem rpm-build make openssl-devel pcre-devel GeoIP-devel readline-devel gcc-c++ wget perl-Digest-SHA perl-Digest-MD5 perl-Data-Dumper perl-Time-HiRes
 
 Then get the relevant files into your tree (replacing `version` with the appropriate version string):
 Note : The spec file is written for version 1.13.6.1 of openresty, edit .spec file and change version with the appropriate version :
