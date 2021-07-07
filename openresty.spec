@@ -26,7 +26,8 @@ OpenResty (aka. ngx_openresty) is a full-fledged web application server by bundl
 
 
 %build
-./configure --with-ipv6 --with-pcre-jit --with-http_geoip_module --with-http_stub_status_module --with-http_realip_module --with-http_v2_module --with-http_slice_module
+git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module.git
+./configure --with-ipv6 --with-pcre-jit --with-http_geoip_module --with-http_stub_status_module --with-http_realip_module --with-http_v2_module --with-http_slice_module --with-http_sub_module --add-module=ngx_http_substitutions_filter_module
 make %{?_smp_mflags}
 
 
