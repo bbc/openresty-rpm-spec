@@ -1,5 +1,5 @@
 Name:		openresty
-Version:	1.13.6.1
+Version:	1.19.3.2
 Release:	1%{?dist}
 Summary:	a fast web app server by extending nginx
 
